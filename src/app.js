@@ -10,21 +10,21 @@ import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
 const store = configureStore();
-console.log(store.getState());
+// console.log(store.getState());
 //const expenseOne = store.dispatch(addExpense({ description: 'Rent', amount: 100, createdAt: -21000 }));
 //const expenseTwo = store.dispatch(addExpense({ description: 'Coffee', amount: 300, createdAt: -1000 }));
-store.dispatch(addExpense({ description: 'Water bill', amount:250 }));
-store.dispatch(addExpense({ description: 'Gas bill', amount: 700 }));
-store.dispatch(addExpense({ description: 'Rent', createdAt: 1000 }));
+// store.dispatch(addExpense({ description: 'Water bill', amount:250 }));
+// store.dispatch(addExpense({ description: 'Gas bill', amount: 700 }));
+// store.dispatch(addExpense({ description: 'Rent', createdAt: 1000 }));
 //store.dispatch(setTextFilter('bill'));
 
 // setTimeout(() => {
 //     store.dispatch(setTextFilter('Gas'));  
 // }, 3000)
 
-const state = store.getState();
-const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
-console.log(visibleExpenses);
+// const state = store.getState();
+// const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
+// console.log(visibleExpenses);
 
 const jsx = (
     <Provider store = {store}>
