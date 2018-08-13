@@ -7,6 +7,13 @@ const EditExpensePage = (props) => {
     console.log(props);
     return (
       <div>
+        <div className="page-header">
+          <div className="content-container">
+            <h1 className="page-header__title">Edit Expense</h1>
+          </div> 
+        </div> 
+        
+        <div className="content-container">
           <ExpenseForm 
             expense={props.expense}
             onSubmit={(expense) => {
@@ -14,12 +21,15 @@ const EditExpensePage = (props) => {
               props.history.push('/');
             }}
           />
-          <button onClick = {() => {
+          <button 
+            className="button button-secondary"
+            onClick = {() => {
             props.dispatch(startRemoveExpense({ id: props.expense.id }));
             props.history.push('/');
           }}>Remove Expense</button>
-
+        
           {/*This is EditExpensePage with id {props.match.params.id}*/}
+        </div>
       </div>
     );
   }
