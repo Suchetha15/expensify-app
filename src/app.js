@@ -55,19 +55,6 @@ firebase.auth().onAuthStateChanged((user) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // console.log(store.getState());
 //const expenseOne = store.dispatch(addExpense({ description: 'Rent', amount: 100, createdAt: -21000 }));
 //const expenseTwo = store.dispatch(addExpense({ description: 'Coffee', amount: 300, createdAt: -1000 }));
