@@ -5,7 +5,8 @@ const filtersReducerDefaultState = {
     text: '',
     sortBy: 'date',
     startDate: moment().startOf('month'),
-    endDate: moment().endOf('month')
+    endDate: moment().endOf('month'),
+    removeSelected: false
   };
   
  export default (state = filtersReducerDefaultState, action) => {
@@ -35,6 +36,16 @@ const filtersReducerDefaultState = {
           ...state,
           endDate: action.endDate
         };
+      case 'OPEN_MODAL':
+        return{
+            ...state,
+            removeSelected: true
+        }
+      case 'CLOSE_MODAL':
+        return{
+            ...state,
+            removeSelected: false
+        }
       default:
         return state;
     }

@@ -26,3 +26,13 @@
     type: 'SET_END_DATE',
     endDate
   });
+
+  export const openModal = (removeSelected = true) => ({
+    type: 'OPEN_MODAL',
+    removeSelected
+});
+
+export const closeModal = (removeSelected = false) => ({
+    type: 'CLOSE_MODAL',
+    removeSelected
+});

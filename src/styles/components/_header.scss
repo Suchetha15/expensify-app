@@ -7,6 +7,8 @@
     justify-content: space-between;
     align-items: center;
     padding: $s-size 0;
+    color: $off-white;
+    margin: 0;
 }
 
 .header__title {
@@ -14,5 +16,21 @@
     text-decoration: none;
     h1 {
         margin: 0;
+    }
+}
+.header__user{
+    margin: 0;
+    padding: 0;
+    p{
+        margin: 0;
+    }
+    img{
+        display: inline-block;
+        margin-left: $l-size;
+        //padding-left: $s-size;
+        border-radius: 50%;
+        height: 15%;
+        width: 15%;
+        vertical-align: center;
     }
 }
